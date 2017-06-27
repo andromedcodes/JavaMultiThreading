@@ -14,7 +14,7 @@ public class App {
     private ArrayList<Integer> list1 = new ArrayList<>();
     private ArrayList<Integer> list2 = new ArrayList<>();
 
-    public void main() {
+    public void execute() {
         System.out.println("Starting ...");
         long start = System.currentTimeMillis();
         // Creating two worker Threads

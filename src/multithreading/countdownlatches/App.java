@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
  */
 public class App {
 
-    public void main() {
+    public void execute() {
         int threadsNbr = 3;
         // Defining an Executor that has 3 worker threads
         ExecutorService executor = Executors.newFixedThreadPool(threadsNbr);

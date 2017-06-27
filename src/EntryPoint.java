@@ -8,6 +8,7 @@ public class EntryPoint {
         multithreading.synchronizedmethod.App app1 = new multithreading.synchronizedmethod.App();
         multithreading.locks.App app2 = new multithreading.locks.App();
         multithreading.countdownlatches.App app3 = new multithreading.countdownlatches.App();
+        multithreading.queues.App app4 = new multithreading.queues.App();
 
         boolean isRunning = true;
 
@@ -31,18 +32,19 @@ public class EntryPoint {
                     break;
                 case "1":
                     System.out.println("Starting Demo 1 : Synchronized methods");
-                    app1.main();
+                    app1.execute();
                     break;
                 case "2":
                     System.out.println("Starting Demo 2 : Locks");
-                    app2.main();
+                    app2.execute();
                     break;
                 case "3":
                     System.out.println("Starting Demo 3 : Countdown Latches");
-                    app3.main();
+                    app3.execute();
                     break;
                 case "4":
                     System.out.println("Starting Demo 4 : Task Queues");
+                    app4.execute();
                     break;
                 default:
                     System.out.println("Please Provide a valid program index!!");

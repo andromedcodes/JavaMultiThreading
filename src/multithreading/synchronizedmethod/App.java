@@ -11,7 +11,7 @@ public class App {
         count++;
     }
 
-    public void main() {
+    public void execute() {
         App app = new App();
         app.doWork();
     }
