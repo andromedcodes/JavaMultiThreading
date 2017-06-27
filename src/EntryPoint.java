@@ -10,6 +10,7 @@ public class EntryPoint {
         multithreading.countdownlatches.App app3 = new multithreading.countdownlatches.App();
         multithreading.queues.App app4 = new multithreading.queues.App();
         multithreading.WaitNotify.App app5 = new multithreading.WaitNotify.App();
+        multithreading.lowlevelsynchronization.App app6 = new multithreading.lowlevelsynchronization.App();
 
         boolean isRunning = true;
 
@@ -19,6 +20,7 @@ public class EntryPoint {
                         "3 : Countdown Latches\n" +
                         "4 : Task Queues\n" +
                         "5 : Wait & Notify Mechanism\n" +
+                        "6 : Low-level Synchronization\n" +
                         "exit : Quit program";
 
         while (isRunning) {
@@ -51,6 +53,10 @@ public class EntryPoint {
                 case "5":
                     System.out.println("Starting Demo 5 : Wait & Notify");
                     app5.execute();
+                    break;
+                case "6":
+                    System.out.println("Starting Demo 6 : Low-level synchronization");
+                    app6.execute();
                     break;
                 default:
                     System.out.println("Please Provide a valid program index!!");
