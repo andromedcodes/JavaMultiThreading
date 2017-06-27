@@ -52,6 +52,8 @@ public class App {
 
     private void consumer() throws InterruptedException {
         Random random = new Random();
+        // Delaying work for 2 seconds to mak sure producer has produced at least one item
+        Thread.sleep(2000);
         while (blockingQueue.size() > 0) {
             Thread.sleep(100);
             if (random.nextInt(10) == 0) {
